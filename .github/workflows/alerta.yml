@@ -1,6 +1,6 @@
 name: Notificacion Hola Mundo
 
-# Se ejecuta cuando se hace push a la rama main
+
 on:
   push:
     branches:
@@ -12,21 +12,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Paso 1: Clonar el repositorio
+
       - name: Checkout del repositorio
         uses: actions/checkout@v4
 
-      # Paso 2: Configurar Node.js
+
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # Paso 3: Ejecutar el programa Hola Mundo
+
       - name: Ejecutar holamundo.js
         run: node holamundo.js
 
-      # Paso 4: Enviar notificacion a ntfy.sh
+
       - name: Enviar notificacion a ntfy.sh
         run: |
           curl -X POST https://ntfy.sh/devops-itla \
