@@ -7,7 +7,7 @@ on:
       - main
 
 jobs:
-  hola-mundo:
+  holamundo:
     name: Ejecutar Hola Mundo y Notificar
     runs-on: ubuntu-latest
 
@@ -23,8 +23,8 @@ jobs:
           node-version: '20'
 
       # Paso 3: Ejecutar el programa Hola Mundo
-      - name: Ejecutar hola-mundo.js
-        run: node hola-mundo.js
+      - name: Ejecutar holamundo.js
+        run: node holamundo.js
 
       # Paso 4: Enviar notificacion a ntfy.sh
       - name: Enviar notificacion a ntfy.sh
