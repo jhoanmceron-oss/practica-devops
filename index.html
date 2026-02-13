@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hola Mundo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .card {
+      text-align: center;
+      padding: 3rem 4rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+    }
+    h1 { font-size: 3.5rem; color: #ffffff; margin-bottom: 0.5rem; }
+    h1 span { color: #a78bfa; }
+    p { color: #94a3b8; font-size: 1rem; margin-top: 1rem; }
+    .badge {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.4rem 1.2rem;
+      background: #a78bfa22;
+      border: 1px solid #a78bfa55;
+      border-radius: 999px;
+      color: #a78bfa;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>¡Hola <span>Mundo</span>!</h1>
+    <p>Página desplegada automáticamente con GitHub Pages</p>
+    <div class="badge"> Ver mas... </div>
+  </div>
+</body>
+</html>
